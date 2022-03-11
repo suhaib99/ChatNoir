@@ -2,7 +2,9 @@ var socket = io();
 
 var messages = document.getElementById('messages');
 var form = document.getElementById('form');
-var input = document.getElementById('input');
+var messageInput = document.getElementById('message-input');
+
+var nickname = prompt('Please enter your nick name')
 
 /*
  Once chat is submitted, precvent default action of refreshing the page,
@@ -11,17 +13,19 @@ var input = document.getElementById('input');
  */
 form.addEventListener('submit', function (e) {
     e.preventDefault();
-    if (input.value) {
-        socket.emit('chat message', input.value);
-        input.value = '';
+    if (messageInput.value) {
+        socket.emit('send-message', messageInput.value);
+        messageInput.value = '';
     }
 });
 
+/*
+when a chat message is received, display it as a list item.
+ */
 
-
-socket.on('chat message', function (msg) {
+socket.on('send-message', function (msg) {
     var item = document.createElement('li');
     item.textContent = msg;
-    messages.appendChild(item);
+    messages.prepend(item);
     window.scrollTo(0, document.body.scrollHeight);
 });

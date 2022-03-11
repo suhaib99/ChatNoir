@@ -10,13 +10,18 @@
 </head>
 
 <body>
-  <ul id="messages"></ul>
+  <div class="container">
+    <ul id="messages"></ul>
+    
+  </div>
   <form id="form" action="">
-    <input id="input" autocomplete="off" /><button>Send</button>
+    <input id="message-input" autocomplete="off" /><button>Send</button>
   </form>
 
   <script src="/socket.io/socket.io.js"></script>
   <script src = "/js/client.js"></script>
+
+  
 </body>
 
 </html>
