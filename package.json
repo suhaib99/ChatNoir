@@ -3,6 +3,7 @@
     "version": "0.0.1",
     "description": "my first chat app using socket.io",
     "dependencies": {
+        "body-parser": "^1.19.2",
         "express": "^4.17.3",
         "socket.io": "^4.4.1"
     },

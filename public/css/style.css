@@ -1,7 +1,5 @@
 html {
       height: 100%;
-
-      
 }
 
 body {
@@ -19,7 +17,7 @@ body {
       position: relative;
 }
 
-#form {
+#message-form {
   background: rgba(0, 0, 0, 0.15);
   padding: 0.25rem;
   position: fixed;
@@ -41,7 +39,7 @@ body {
 #message-input:focus {
   outline: none;
 }
-#form > button {
+#message-form > button {
   background: #333;
   border: none;
   padding: 0 1rem;
