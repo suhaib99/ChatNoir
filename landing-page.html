@@ -5,17 +5,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ChatNoir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/landing.css" />
   </head>
 
   <body>
+
     <form id="user-information-form" method ="post" action="/submit-user-info">
       <h3>Enter your nickname and colour here</h3>
-      <input type="text" name="nickname" id="nickname-input" autocomplete="off" />
+      <input class="enterinput" type="text" name="nickname" id="nickname-input" autocomplete="off" />
 
       <h3>Enter your chat colour here</h3>
-      <input type="text" name="colour" id="colour-input" autocomplete="off" />
+      <input class="enterinput" type="text" name="colour" id="colour-input" autocomplete="off" />
 
-      <button type="submit">Submit</button>
+      <button class="mybutton" type="submit">Submit</button>
 
     </form>
   </body>
