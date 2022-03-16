@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChatNoir</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/landing.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatNoir</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/landing.css" />
+</head>
 
-    <form id="user-information-form" method ="post" action="/submit-user-info">
-      <h3>Enter your nickname and colour here</h3>
-      <input class="enterinput" type="text" name="nickname" id="nickname-input" autocomplete="off" />
+<body>
 
-      <h3>Enter your chat colour here</h3>
-      <input class="enterinput" type="text" name="colour" id="colour-input" autocomplete="off" />
 
-      <button class="mybutton" type="submit">Submit</button>
 
-    </form>
-  </body>
+  <!-- <div class="waveWrapper waveAnimation">
+
+    <div class="waveWrapperInner bgTop">
+
+
+      <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')">
+      </div>
+
+
+    </div>
+
+    <div class="waveWrapperInner bgMiddle">
+      <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')">
+      </div>
+    </div>
+    <div class="waveWrapperInner bgBottom">
+      <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')">
+      </div>
+    </div> -->
+
+    <div class="card">
+      <div class="card-container">
+  
+        <form id="user-information-form" method="post" action="/submit-user-info">
+          <h3>Enter your name here</h3>
+          <input class="enterinput" type="text" name="nickname" id="nickname-input" autocomplete="off" />
+  
+          <h3>Enter your chat colour here</h3>
+          <input class="enterinput" type="text" name="colour" id="colour-input" autocomplete="off" />
+  
+          <button class="mybutton" type="submit">Submit</button>
+  
+      </div>
+    </div>
+  <!-- </div> -->
+
+
+</body>
+
 </html>
